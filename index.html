@@ -3,15 +3,38 @@
 
 <head>
     
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="PasswordGenerator.js"></script>
     <title>Password Generator</title>
 
 </head>
 
 <body>
-    
+<h1>Password Generator</h1>
+<br>
 
+<form>
+    <label for="plength">Password Length:</label><br>
+        <select name="passwordlength" id="length">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8" selected>8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select><br>
+    <label for="include-numbers">Include Numbers:</label><br>
+        <input type="checkbox" id="numbers" checked><br>
+    <label for="include-symbols">Include Symbols:</label><br>
+        <input type="checkbox" id="symbols" checked><br>
+    <input onclick="getInputValue();" type="submit" value="Generate Password">
+</form>
 
 </body>
 
