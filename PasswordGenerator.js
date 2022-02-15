@@ -1,4 +1,5 @@
 /*
+
     Password generator used for quick and easy password creation.
     array of symbols, numbers, and letters and working array
 
@@ -12,7 +13,6 @@
         -math.random from 1 to amount in array to find value for password character.
         -repeat step 4 times
 
-
 */
 
     let passwordLength = 0;
@@ -24,6 +24,8 @@
     let symbols = ['!','@','#','$','%','^','&','*','(',')','_','-','=','+'];
     let workingArray = [];
 
+    let createdPass = [];
+
 function getInputValue() {
 
     //obtain values from form.
@@ -32,28 +34,41 @@ function getInputValue() {
     includeSymbols = document.getElementById("symbols").checked;
     let test = Math.floor((Math.random()*10)+1);
 
+    //use functions created below.
     createWorkingArray();
+    generatePassword();
 
     //print out values to an alert.
-    alert(workingArray);
-
-    
-
+    alert(createdPass);
 
 };
 
 function createWorkingArray() {
-    if (includeNumbers === true) {
-        workingArray.push(alphabet, numbers);
+
+    //logic for concatting to new array so passwords know what to include.
+    if (includeNumbers === true && includeSymbols === true) {
+        workingArray = alphabet.concat(numbers, symbols[2]);
     }
-    if (includeSymbols === true) {
-        workingArray.push(symbols);
+    if (includeNumbers === true && includeSymbols === false) {
+        workingArray = alphabet.concat(numbers);
+    }
+    if (includeNumbers === false && includeSymbols === true) {
+        workingArray = alphabet.concat(symbols);
     }
     if (includeNumbers === false && includeSymbols === false) {
-        workingArray.push(alphabet)
+        workingArray = workingArray.concat(alphabet);
     }
-
-    //make it where alphabet is always pushed first.
 
 };
 
+function generatePassword() {
+
+    //loop through pass length and generated a random character then remove all commas from the string.
+    for (i = passwordLength; i > 0; i--) {
+        createdPass = createdPass.concat(workingArray[Math.floor(Math.random()*workingArray.length)]);
+    }
+
+    createdPass = createdPass.toString();
+    createdPass = createdPass.replaceAll(',', '');
+
+};
