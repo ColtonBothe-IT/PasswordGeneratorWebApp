@@ -1,3 +1,29 @@
+/*
+    color palette-https://coolors.co/e6e1db-dbac95-37355a-6d64b9-e7363c
+    font-https://fonts.google.com/specimen/Saira
+*/
+
 body {
-    background-color: blanchedalmond;
+    background-color: #E6E1DB;
+    color: #37355A;
+}
+
+h1 {
+
+    font-family: Saira;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    /* line-height: 110px; */
+
+}
+
+h2 {
+
+    font-family: Saira;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 57px;
+
 }

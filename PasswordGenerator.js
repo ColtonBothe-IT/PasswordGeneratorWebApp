@@ -1,4 +1,9 @@
 /*
+    to add:
+    pass complexity algo
+    slider for pass length
+    more options for pass options
+    exclude characters
 
     Password generator used for quick and easy password creation.
     array of symbols, numbers, and letters and working array
