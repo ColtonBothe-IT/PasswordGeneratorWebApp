@@ -4,6 +4,11 @@
 */
 *{
     font-family: Saria, sans-serif;
+    margin: 0;
+}
+
+html{
+    margin: 0;
 }
 
 body {
@@ -71,13 +76,15 @@ form {
 
 .password-box {
     margin: 30px auto;
-    width: 63%;
+    
     background: #EBEBEB;
     border: .75px solid #37355A;
     border-radius: 20px;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 1.875rem 5rem;
+    width: 63%;
+    min-width: 370px;
 }
 
 .form-info {
@@ -93,6 +100,7 @@ form {
     padding: 1.875rem;
     padding-bottom: 3.125rem;
     width: 60%;
+    min-width: 350px;
     
 }
 
