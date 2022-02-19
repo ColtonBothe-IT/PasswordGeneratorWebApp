@@ -1,7 +1,10 @@
 /*
     color palette-https://coolors.co/e6e1db-dbac95-37355a-6d64b9-e7363c
-    font-https://fonts.google.com/specimen/Saira
+    font-https://fonts.google.com/specimen/Saira 500 600
 */
+*{
+    font-family: Saria, sans-serif;
+}
 
 body {
     background-color: #E6E1DB;
@@ -10,7 +13,7 @@ body {
 
 h1 {
 
-    font-family: Saira;
+    font-family: Saira, sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 64px;
@@ -22,7 +25,7 @@ h1 {
 
 h2 {
 
-    font-family: Saira;
+    font-family: Saira, sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
@@ -31,34 +34,50 @@ h2 {
 
 }
 
+.generate-pass {
+    font-family: Saira;
+    font-size: 18px;
+    background-color: #37355A;
+    color: #DBAC95;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 11rem;
+    height: 3rem;
+}
+
 form {
 
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: left;
+    align-items: flex-start;
+    display: grid;
+    font-family: Saira, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-gap: 1rem;
+    justify-items: start;
 
 }
-/* this is cringe find a better way to do this */
-label {
-    margin: 5px;
-}
-select {
-    margin: 5px;
-}
-input {
-    margin: 5px;
+
+.checkboxes {
+    display: grid;
+    grid-template-columns: 12rem 12rem;
+    grid-row: auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+
+    margin: 10px;
+    text-align: left;
 }
 
 .password-box {
     margin: 30px auto;
-    width: 50%;
+    width: 63%;
     background: #EBEBEB;
     border: .75px solid #37355A;
     border-radius: 20px;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    padding: 2rem 5rem;
+    padding: 1.875rem 5rem;
 }
 
 .form-info {
@@ -72,6 +91,32 @@ input {
     flex-direction: column;
     margin: auto;
     padding: 1.875rem;
+    padding-bottom: 3.125rem;
     width: 60%;
     
+}
+
+.form-element {
+    margin: 0 0.5rem 2rem 1rem;
+}
+
+
+/* .test {
+    grid-auto-flow: column;
+} */
+
+
+#password-length {
+    padding-bottom: 1rem;
+    width: 30px;
+    height: auto;
+    
+}
+
+#form-container {
+    display: flex;
+}
+
+#submit-button {
+    margin: auto;
 }
