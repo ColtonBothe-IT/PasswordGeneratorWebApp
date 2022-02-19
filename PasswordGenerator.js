@@ -1,25 +1,3 @@
-/*
-    to add:
-    pass complexity algo
-    slider for pass length
-    more options for pass options
-    exclude characters
-
-    Password generator used for quick and easy password creation.
-    array of symbols, numbers, and letters and working array
-
-    if includesnumbers append numbers array
-
-    if includessymbols append symbols array 
-
-    count number of password length
-    lets assume length is 4
-        -count items in array
-        -math.random from 1 to amount in array to find value for password character.
-        -repeat step 4 times
-
-*/
-
     let passwordLength = 0;
     let includesLowercase = false;
     let includesUppercase = false;
