@@ -137,6 +137,7 @@ form {
 @media (max-width: 1285px) {
 
     h2 {
+        font-size: 30px;
         text-align: center;
         margin: 0;
     }
@@ -146,9 +147,9 @@ form {
         margin: 30px auto;
     }
 
-    .checkboxes {
+    /* .checkboxes {
         grid-template-columns: auto;
-    }
+    } */
 
     #form-container {
         flex-direction: column;
@@ -159,4 +160,12 @@ form {
     }
 
 
-   }
+}
+
+@media (max-width: 940px) {
+
+    .checkboxes {
+        grid-template-columns: auto;
+    }
+
+}
