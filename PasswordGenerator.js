@@ -27,8 +27,8 @@ function getInputValue() {
     generatePassword();
 
     //print out values to an alert.
-    alert(createdPass);
-
+    document.getElementById('my-brand').innerHTML = createdPass;
+    createdPass = [];
 };
 
 function createWorkingArray() {
