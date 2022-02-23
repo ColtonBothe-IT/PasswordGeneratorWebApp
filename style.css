@@ -116,11 +116,10 @@ form {
     margin: 0 0.5rem 2rem 1rem;
 }
 
-
-/* .test {
-    grid-auto-flow: column;
-} */
-
+.separator {
+    border-bottom: 1px dashed rgba(55, 53, 90, 0.45);
+    margin: 1rem 0 2rem 0;
+}
 
 #password-length {
     padding-bottom: 1rem;

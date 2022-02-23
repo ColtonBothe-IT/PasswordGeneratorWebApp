@@ -29,6 +29,11 @@ function getInputValue() {
     //print out values to an alert.
     document.getElementById('my-brand').innerHTML = createdPass;
     createdPass = [];
+    workingArray = [];
+    includesLowercase = false;
+    includesUppercase = false;
+    includeNumbers = false;
+    includeSymbols = false;
 };
 
 function createWorkingArray() {
