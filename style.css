@@ -39,6 +39,7 @@ h2 {
 }
 
 .generate-pass {
+    cursor: pointer;
     font-family: Saira;
     font-size: 18px;
     background-color: #37355A;
@@ -78,7 +79,7 @@ form {
 }
 
 .password-box {
-    margin: 30px auto;
+    margin: 1.25rem auto 2.5rem auto;
     
     background: #EBEBEB;
     border: .75px solid #37355A;
@@ -104,7 +105,7 @@ form {
     border-radius: 25px;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: 0 auto 3rem auto;
     padding: 1.875rem;
     padding-bottom: 3.125rem;
     width: 50%;
