@@ -38,7 +38,36 @@ h2 {
 
 }
 
+select {
+    cursor: pointer;
+    border-width: 2px;
+    border-radius: 15px;
+    border-color: rgba(55, 53, 90, .8);
+    background-color: rgba(230, 225, 219, .4);
+    padding: 3px;
+    font-family: Saria, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+option {
+    background-color: rgba(230, 225, 219, .8);
+    font-weight: bold;
+}
+
 .generate-pass {
+    cursor: pointer;
+    font-family: Saira;
+    font-size: 18px;
+    background-color: #37355A;
+    color: #DBAC95;
+    border-radius: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 11rem;
+    height: 3rem;
+}
+
+.copy-text {
     cursor: pointer;
     font-family: Saira;
     font-size: 18px;
@@ -122,11 +151,32 @@ form {
     margin: 1rem 0 2rem 0;
 }
 
+.buttons {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* .gen-button {
+    flex: 0 0 70%;
+}
+
+.copy-button {
+    flex: 0 0 30%;
+} */
+
+#copy-text {
+    all: unset;
+}
+
 #password-length {
     padding-bottom: 1rem;
     width: 30px;
     height: auto;
-    
 }
 
 #form-container {
@@ -139,7 +189,7 @@ form {
 }
 
 
-@media (max-width: 1285px) {
+@media (max-width: 1460px) {
 
     h2 {
         font-size: 30px;
@@ -152,6 +202,10 @@ form {
         margin: 30px auto;
     }
 
+    .buttons {
+        margin-left: 0;
+    }
+
     /* .checkboxes {
         grid-template-columns: auto;
     } */
@@ -160,9 +214,9 @@ form {
         flex-direction: column;
     }
 
-    #submit-button {
+    /* #submit-button {
         margin-top: 1rem;
-    }
+    } */
 
 
 }
@@ -171,6 +225,10 @@ form {
 
     .checkboxes {
         grid-template-columns: auto;
+    }
+
+    h1 {
+        margin: 2rem auto;
     }
 
 }
