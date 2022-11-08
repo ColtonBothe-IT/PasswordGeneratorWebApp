@@ -102,3 +102,4 @@ function generatePassword() {
     createdPass = createdPass.replaceAll(',', '');
 
 };
+
